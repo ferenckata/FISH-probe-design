@@ -55,15 +55,15 @@ Homology filter (modified from the original code of [Gabriele Girelli](https://g
 - Optional arguments are the thresholds of each filter and the oligo length
 - The output is a filtered fasta file
 - The filter is done in three steps:
-1. Homology filtering
-   - If an oligo is less homologous to any other genes than its origin, than a set threshold it passes the homology filter
-   - Default threshold is 0.85, calculated as (# of perfect matches - # of mismatches) / length of the oligo
-2. Off-taget filtering
-   - If an oligo has a higher similarity to another gene than the threshold, but the number of such off-target genes is lower than the threshold, it passes the off-target filter
-   - Default threshold is 20
-3. Saturation filter
-   - If an oligo fails both the homology filter and the off-target number filter, it has one more chance. If the total number of oligos targeting an off-target transcript (not gene!) is lower than the trheshold, these oligos passes the saturation filter.
-   - Default threshold is 5
+  1. Homology filtering
+     - If an oligo is less homologous to any other genes than its origin, than a set threshold it passes the homology filter
+     - Default threshold is 0.85, calculated as (# of perfect matches - # of mismatches) / length of the oligo
+  2. Off-taget filtering
+     - If an oligo has a higher similarity to another gene than the threshold, but the number of such off-target genes is lower than the threshold, it passes the off-target filter
+     - Default threshold is 20
+  3. Saturation filter
+     - If an oligo fails both the homology filter and the off-target number filter, it has one more chance. If the total number of oligos targeting an off-target transcript (not gene!) is lower than the trheshold, these oligos passes the saturation filter.
+     - Default threshold is 5
 
 ### Selection
 - Chose a set of oligos from the overlapping set left after all filtering steps
@@ -72,7 +72,7 @@ Homology filter (modified from the original code of [Gabriele Girelli](https://g
   - It could easily be changed to be the other way around, but not implemented yet
 - The script is called selection.py
 - The input is the folder with only the blastfiltered fasta files, the output is the a "...probes.tsv"  with the properties of groups of oligos*, and a "...chosen.fa" with the chosen oligos
-  - * after all filtering steps there are regions with and without oligos. "group of oligos" is a name for a region with (often overlapping) oligos, the groups are separated by empty regions
+ * after all filtering steps there are regions with and without oligos. "group of oligos" is a name for a region with (often overlapping) oligos, the groups are separated by empty regions
 
 ### Barcoding
 - The script is the `barcode_appender.r` , not yet runnable from the terminal
