@@ -55,15 +55,15 @@ Homology filter
 - Optional arguments are the thresholds of each filter and the oligo length
 - The output is a filtered fasta file
 - The filter is done in three steps:
-	-Homology filtering
-		-If an oligo is less homologous to any other genes than its origin, than a set threshold it passes the homology filter
-		-Default threshold is 0.85, calculated as (# of perfect matches - # of mismatches) / length of the oligo
-	-Off-taget filtering
-		-If an oligo has a higher similarity to another gene than the threshold, but the number of such off-target genes is lower than the threshold, it passes the off-target filter
-		-Default threshold is 20
-	-Saturation filter
-		-If an oligo fails both the homology filter and the off-target number filter, it has one more chance. If the total number of oligos targeting an off-target transcript (not gene!) is lower than the trheshold, these oligos passes the saturation filter.
-		-Default threshold is 5
+1. Homology filtering
+-If an oligo is less homologous to any other genes than its origin, than a set threshold it passes the homology filter
+-Default threshold is 0.85, calculated as (# of perfect matches - # of mismatches) / length of the oligo
+2. Off-taget filtering
+-If an oligo has a higher similarity to another gene than the threshold, but the number of such off-target genes is lower than the threshold, it passes the off-target filter
+-Default threshold is 20
+3. Saturation filter
+-If an oligo fails both the homology filter and the off-target number filter, it has one more chance. If the total number of oligos targeting an off-target transcript (not gene!) is lower than the trheshold, these oligos passes the saturation filter.
+-Default threshold is 5
 
 ### Selection
 - Chose a set of oligos from the overlapping set left after all filtering steps
