@@ -1,8 +1,8 @@
-## FISH-probe-design
+# FISH-probe-design
 For RNA or DNA FISH probes of any gene/transcript of interest
 
 
-# Retrieving the sequences
+### Retrieving the sequences
 For intronic seq
 - The script is the intron_by_coord.r
 - Currently it's getting the coordinates of the exons from either Mus musculus mm10 or Homo sapiens hg38 versions (the user defines the species: h is human, m is mouse)
@@ -10,7 +10,7 @@ For intronic seq
 - The output is a fasta file with the sequences. The header contains the Ensembl gene ID and the position of the sequence
 - Additionally it produces a bed file with the coordinates that is compatible with UCSC Genome Browser
 	
-# For cDNA or CDS
+### For cDNA or CDS
 - The script is the cds_cdna.r
 - Retrieving the CDS or CDNA sequences from mm10 or hg38
 - The input is a CSV file with the Gene Symbol, Ensembl Gene ID or Transcript ID (header must include these names starting with capital letter)
