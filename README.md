@@ -71,8 +71,8 @@ Homology filter (modified from the original code of [Gabriele Girelli](https://g
   - Ie. Two oligos of 60-40% GC is chosen over one with 50% GC
   - It could easily be changed to be the other way around, but not implemented yet
 - The script is called selection.py
-- The input is the folder with only the blastfiltered fasta files, the output is the a "...probes.tsv"  with the properties of groups of oligos*, and a "...chosen.fa" with the chosen oligos
- * after all filtering steps there are regions with and without oligos. "group of oligos" is a name for a region with (often overlapping) oligos, the groups are separated by empty regions
+- The input is the folder with only the blastfiltered fasta files, the output is the a "...probes.tsv"  with the properties of groups of oligos, and a "...chosen.fa" with the chosen oligos
+_after all filtering steps there are regions with and without oligos. "group of oligos" is a name for a region with (often overlapping) oligos, the groups are separated by empty regions_
 
 ### Barcoding
 - The script is the `barcode_appender.r` , not yet runnable from the terminal
