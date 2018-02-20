@@ -1,20 +1,20 @@
-# FISH-probe-design
+## FISH-probe-design
 For RNA or DNA FISH probes of any gene/transcript of interest
 
 
-Retrieving the sequences
+# Retrieving the sequences
 For intronic seq
-	- The script is the intron_by_coord.r
-	- Currently it's getting the coordinates of the exons from either Mus musculus mm10 or Homo sapiens hg38 versions (the user defines the species: h is human, m is mouse)
-	- It calculates the shortest distance between consecutive exons irrespectively of which transcript the exons are from
-	- The output is a fasta file with the sequences. The header contains the Ensembl gene ID and the position of the sequence
-	- Additionally it produces a bed file with the coordinates that is compatible with UCSC Genome Browser
+- The script is the intron_by_coord.r
+- Currently it's getting the coordinates of the exons from either Mus musculus mm10 or Homo sapiens hg38 versions (the user defines the species: h is human, m is mouse)
+- It calculates the shortest distance between consecutive exons irrespectively of which transcript the exons are from
+- The output is a fasta file with the sequences. The header contains the Ensembl gene ID and the position of the sequence
+- Additionally it produces a bed file with the coordinates that is compatible with UCSC Genome Browser
 	
-For cDNA or CDS
-	- The script is the cds_cdna.r
-	- Retrieving the CDS or CDNA sequences from mm10 or hg38
-	- The input is a CSV file with the Gene Symbol, Ensembl Gene ID or Transcript ID (header must include these names starting with capital letter)
-	- Output is a fasta file
+# For cDNA or CDS
+- The script is the cds_cdna.r
+- Retrieving the CDS or CDNA sequences from mm10 or hg38
+- The input is a CSV file with the Gene Symbol, Ensembl Gene ID or Transcript ID (header must include these names starting with capital letter)
+- Output is a fasta file
 
 Creating all possible k-mers and characterize them
 	- The code is called kmer_char.py (in python 3, modified from GG's code)
