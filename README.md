@@ -17,7 +17,7 @@ For intronic seq
 - Additionally it produces a bed file with the coordinates that is compatible with UCSC Genome Browser
 
 ### Creating all possible k-mers and characterize them
-- The code is called `characterize_oligos.py` (in python 3, modified from [Gabriele Girelli](https://github.com/ggirelli)'s code)
+- The code is called `characterize_oligos_kf.py` (in python 3, modified from [Gabriele Girelli](https://github.com/ggirelli)'s code)
 - The mandatory inputs are the fasta file output of the first step and the name of a fasta output. The optional inputs are in the help of the script.
 - The header of the output contains the gene name, the intron number, the oligo number in the intron, the GC content, the melting temperature and the presence of homopolymers
 
