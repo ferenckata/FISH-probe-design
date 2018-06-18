@@ -110,10 +110,10 @@ for file in files:
                 if el > elzero + 29 + mind:
                     elzero = el
                     sets[key][shift+1].append(element)
-#########################################################################
-### to calculate the mean GC and the std of the GC for each set and pick the best one from each group
-### a preferred mean can be chosen from the statistics before
-##########################################################################################################
+    #########################################################################
+    ### to calculate the mean GC and the std of the GC for each set and pick the best one from each group
+    ### a preferred mean can be chosen from the statistics before
+    ##########################################################################################################
 
     probestorage = {}
     with open(probesfile,'a') as pr:
@@ -159,7 +159,7 @@ for file in files:
             oi = ':' + str(list(i.keys())[0]) + ':' + '%.6f' % float(list(i.values())[0])
             oligos.append(oi)
             
-# create the fasta file with the chosen oligos
+    # create the fasta file with the chosen oligos
     headr = re.compile('>')
     f=open(file,'r')
     co=open(outfasta,'a')
