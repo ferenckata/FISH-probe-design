@@ -16,6 +16,8 @@ For intronic seq
 - The output is a fasta file with the sequences. The header contains the Ensembl gene ID and the position of the sequence
 - Additionally it produces a bed file with the coordinates that is compatible with UCSC Genome Browser
 
+NOTE: in case of intronic probes, if the gene is on the negative strand the oligo needs to be reverse complemented
+
 ### Creating all possible k-mers and characterize them
 - The code is called `characterize_oligos_kf.py` (in python 3, modified from [Gabriele Girelli](https://github.com/ggirelli)'s code)
 - The mandatory inputs are the fasta file output of the first step and the name of a fasta output. The optional inputs are in the help of the script.
