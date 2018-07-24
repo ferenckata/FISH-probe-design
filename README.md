@@ -17,7 +17,7 @@ For intronic seq
 - Additionally it produces a bed file with the coordinates that is compatible with UCSC Genome Browser
 
 
-NOTE: if the gene is on the negative strand the oligo needs to be reverse complemented
+NOTE: in case of intronic sequence, if the gene is on the negative strand the oligo needs to be reverse complemented
 
 ### Creating all possible k-mers and characterize them
 - The code is called `characterize_oligos_kf.py` (in python 3, modified from [Gabriele Girelli](https://github.com/ggirelli)'s code)
